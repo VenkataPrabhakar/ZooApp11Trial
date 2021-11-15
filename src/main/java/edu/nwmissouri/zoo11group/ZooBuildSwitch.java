@@ -44,8 +44,10 @@ public class ZooBuildSwitch {
                 int lengthExtension = ".java".length();
                 int fileNameLength = fileLength - lengthExtension;
                 var justName = file.substring(0, fileNameLength);
-                if (justName.endsWith("Group")) {
+                if (justName.endsWith("Rides")||justName.endsWith("Group")||justName.endsWith("Adventure")) {
                     var animal = justName.replace("Group", "");
+                    animal = justName.replace("Rides", "");
+                    animal = justName.replace("Adventure", "");
                    animalMap.put(n++, animal);
                 }
             }
@@ -78,7 +80,7 @@ public class ZooBuildSwitch {
                 int lengthExtension = ".java".length();
                 int fileNameLength = fileLength - lengthExtension;
                 var justName = file.substring(0, fileNameLength);
-                if (justName.endsWith("Group")) {
+                if (justName.endsWith("Rides")||justName.endsWith("Group")||justName.endsWith("Adventure")) {
 
                     // output this:
                     //case 1 -> {             
@@ -103,7 +105,7 @@ public class ZooBuildSwitch {
                 int lengthExtension = ".java".length();
                 int fileNameLength = fileLength - lengthExtension;
                 var justName = file.substring(0, fileNameLength);
-                if (justName.endsWith("Group")) {
+                if (justName.endsWith("Rides")||justName.endsWith("Group")||justName.endsWith("Adventure"))  {
                     // output something like this - but in columns
                     //System.out.print("1. Aardvarks");
                     //System.out.println("2. Asps");
@@ -111,6 +113,8 @@ public class ZooBuildSwitch {
                     // write code below.....
                     //System.out.println("case " + n++ + " -> {");
                     var animal = justName.replace("Group", "");
+                    animal = justName.replace("Rides", "");
+                    animal = justName.replace("Adventure", "");
                     var numberAndAnimal = String.format("%2d.%-20s", n, animal);
                     var quote = "\"";
                     var sOpen = "System.out.print(";
