@@ -113,6 +113,4 @@ public class BungeJumpAdventureTest {
         assertEquals(expResult, result);
     }
 
-   
-
 }
