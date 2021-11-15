@@ -34,10 +34,17 @@ public class ZooController {
      * @return
      */
     @GetMapping(path = "/")
-    public String index() {
-        return "about";
+    public String index(
+            @RequestParam(name = "id", required = false, defaultValue = "0") String idParam,
+            Model model) {
+        model.addAttribute("id", idParam);
+        model.addAttribute("name", "World");
+        model.addAttribute("greeting", GREETING_MESSAGE);
+        model.addAttribute("animalMap", ZooBuildSwitch.getAllAnimalMap());
+        model.addAttribute("customAnimalGroup", getCustomAnimalGroup(idParam));
+        // associated with index.hmtl in src/main/resources/templates
+        return "index";
     }
-
 
     /**
      * Map GET request to "/about" to about() method.
