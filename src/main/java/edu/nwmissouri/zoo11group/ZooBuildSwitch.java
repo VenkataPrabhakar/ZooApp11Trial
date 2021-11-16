@@ -46,8 +46,8 @@ public class ZooBuildSwitch {
                 var justName = file.substring(0, fileNameLength);
                 if (justName.endsWith("Rides")||justName.endsWith("Group")||justName.endsWith("Adventure")) {
                     var animal = justName.replace("Group", "");
-                    animal = justName.replace("Rides", "");
-                    animal = justName.replace("Adventure", "");
+//                    animal = justName.replace("Rides", "");
+//                    animal = justName.replace("Adventure", "");
                    animalMap.put(n++, animal);
                 }
             }
