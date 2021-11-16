@@ -92,20 +92,20 @@ public class ZooBuildSwitch {
                     System.out.println(justName + ".run();");
                     System.out.println("}");
                 }
-                else if(justName.endsWith("Rides")){
-                    System.out.println("case " + n++ + " -> {");
-                    System.out.println(justName + ".ticketprice();");
-                    System.out.println(justName + ".run();");
-                    System.out.println("}");
-                
-                }
-                else if(justName.endsWith("Adventure")){
-                    System.out.println("case " + n++ + " -> {");
-                    System.out.println(justName + ".idProof();");
-                    System.out.println(justName + ".ageLimit();");
-                    System.out.println("}");
-                } else {
-                }
+//                else if(justName.endsWith("Rides")){
+//                    System.out.println("case " + n++ + " -> {");
+//                    System.out.println(justName + ".ticketprice();");
+//                    System.out.println(justName + ".run();");
+//                    System.out.println("}");
+//                
+//                }
+//                else if(justName.endsWith("Adventure")){
+//                    System.out.println("case " + n++ + " -> {");
+//                    System.out.println(justName + ".idProof();");
+//                    System.out.println(justName + ".ageLimit();");
+//                    System.out.println("}");
+//                } else {
+//                }
             }
         }
 
