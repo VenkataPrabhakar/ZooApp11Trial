@@ -80,7 +80,7 @@ public class ZooBuildSwitch {
                 int lengthExtension = ".java".length();
                 int fileNameLength = fileLength - lengthExtension;
                 var justName = file.substring(0, fileNameLength);
-                if (justName.endsWith("Rides")||justName.endsWith("Group")||justName.endsWith("Adventure")) {
+                if (justName.endsWith("Group")||justName.endsWith("Adventure")) {
 
                     // output this:
                     //case 1 -> {             
@@ -90,6 +90,19 @@ public class ZooBuildSwitch {
                     System.out.println("case " + n++ + " -> {");
                     System.out.println(justName + ".create();");
                     System.out.println(justName + ".run();");
+                    System.out.println("}");
+                }
+                else if(justName.endsWith("Rides")){
+                    System.out.println("case " + n++ + " -> {");
+                    System.out.println(justName + ".ticketprice();");
+                    System.out.println(justName + ".run();");
+                    System.out.println("}");
+                
+                }
+                else{
+                 System.out.println("case " + n++ + " -> {");
+                    System.out.println(justName + ".idProof();");
+                    System.out.println(justName + ".ageLimit();");
                     System.out.println("}");
                 }
             }
