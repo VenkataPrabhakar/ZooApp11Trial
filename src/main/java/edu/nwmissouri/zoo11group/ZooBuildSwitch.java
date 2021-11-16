@@ -99,11 +99,12 @@ public class ZooBuildSwitch {
                     System.out.println("}");
                 
                 }
-                else{
-                 System.out.println("case " + n++ + " -> {");
+                else if(justName.endsWith("Adventure")){
+                    System.out.println("case " + n++ + " -> {");
                     System.out.println(justName + ".idProof();");
                     System.out.println(justName + ".ageLimit();");
                     System.out.println("}");
+                } else {
                 }
             }
         }
