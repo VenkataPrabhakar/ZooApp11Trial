@@ -80,7 +80,7 @@ public class ZooBuildSwitch {
                 int lengthExtension = ".java".length();
                 int fileNameLength = fileLength - lengthExtension;
                 var justName = file.substring(0, fileNameLength);
-                if (justName.endsWith("Group")||justName.endsWith("Adventure")) {
+                if (justName.endsWith("Group")) {
 
                     // output this:
                     //case 1 -> {             
