@@ -91,7 +91,7 @@ public class AnimalRides {
  */
     public static void run() {
         System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-        System.out.println("Hey - look at the Elephant!");
+        System.out.println("Hey - look at the Animal Rides!");
     }
 
 }
