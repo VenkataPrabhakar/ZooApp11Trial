@@ -19,8 +19,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class ZooController {
 
-    private static final String GREETING_MESSAGE = "Welcome to our 542 Zoo!";
-    private static final String GOODBYE_MESSAGE = "Thank you for visiting our zoo!";
+    private static final String GREETING_MESSAGE = "Welcome to our 542 ZooGroup11!";
+    private static final String GOODBYE_MESSAGE = "Thank you for visiting our ZooAdventure and ZooRides!";
     private static final int NUMBER_ANIMAL_TYPES = 60;
 
     /**
