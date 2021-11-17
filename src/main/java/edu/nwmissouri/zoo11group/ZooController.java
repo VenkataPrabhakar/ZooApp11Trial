@@ -120,70 +120,86 @@ public class ZooController {
         switch (intID) {
 
             case 1 -> {
-                ElephantGroup.create();
-                ElephantGroup.run();
+                AnimalRides.run();
+                
             }
             case 2 -> {
-                EmuGroup.create();
-                EmuGroup.run();
+                BungeJumpAdventure.run();
+               
             }
 
             case 3 -> {
-                PantheraGroup.create();
-                PantheraGroup.run();
+                CarRides.run();
+                
             }
             case 4 -> {
-                PolarBearGroup.create();
-                PolarBearGroup.run();
+                 CycleRides.run();
             }
             case 5 -> {
-                ProngHornGroup.create();
-                ProngHornGroup.run();
+                ElephantGroup.create();
+                ElephantGroup.run();
+               
             }
 
             case 6 -> {
-                TauntingTigerGroup.create();
-                TauntingTigerGroup.run();
+                 EmuGroup.create();
+                EmuGroup.run();
+               
             }
 
             case 7 -> {
-                SkyRides.run();
+                 FerrisWheelAdventure.run();
+                
             }
             case 8 -> {
-                BungeJumpAdventure.run();
-            }
-            case 9 -> {
-                CarRides.run();
-            }
-            case 10 -> {
-                CycleRides.run();
-            }
-            case 11 -> {
-                FerrisWheelAdventure.run();
-            }
-            case 12 -> {
+                
                 LogRideAdventure.run();
             }
+            case 9 -> {
+                PantheraGroup.create();
+                PantheraGroup.run();
+                
+            }
+            case 10 -> {
+                 PolarBearGroup.create();
+                PolarBearGroup.run();
+              
+            }
+            case 11 -> {
+                 ProngHornGroup.create();
+                ProngHornGroup.run();
+               
+            }
+            case 12 -> {
+                
+                 RollerCoasterAdventure.run();
+            }
             case 13 -> {
-                RollerCoasterAdventure.run();
+               
+                 RopeRidesAdventure.run();
             }
             case 14 -> {
-                RopeRidesAdventure.run();
+                                ShuttleRides.run();
+               
             }
             case 15 -> {
-                ShuttleRides.run();
+                SkyRides.run();
             }
             case 16 -> {
-                TrainRides.run();
+                 TauntingTigerGroup.create();
+                TauntingTigerGroup.run();
+               
+            }
+            case 17 -> {
+                 TrainRides.run();
                 TrainRides.speedCalculation();
                 TrainRides.seatNumber();
                 TrainRides.trainRides();
-            }
-            case 17 -> {
-                WaterRides.run();
+               
             }
             case 18 -> {
-                AnimalRides.run();
+                 WaterRides.run();
+               
             }
             default -> {
             }
